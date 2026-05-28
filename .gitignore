@@ -46,3 +46,19 @@ wp-config.php
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+
+# LocalWP specific
+/.local-php-version
+/wp-content/debug.log
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+/wp-content/cache/
+
+# Node modules (if using block editor / theme dev)
+node_modules/
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
