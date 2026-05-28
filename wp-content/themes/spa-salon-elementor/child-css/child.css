@@ -1,0 +1,140 @@
+:root{
+  --primary--color: #F9A392;
+  --bg--color: #3e372f;
+}
+
+/*header*/
+.header-two,
+.affix.sticky-menu{
+  background-color: var(--bg--color);
+}
+
+@media (min-width: 992px) {
+    .main-navigation .menu .page_item a, .main-navigation .menu .menu-item a, .main-navigation .menu .dropdown-item a, .main-navigation .menu .nav-link {
+        color: #ffffff;
+    }
+}
+
+#primary-menu .nav-link:focus {
+    background-color: transparent;
+    border: none;
+}
+
+.header-two .site-title a{
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+    .main-navigation .menu .children .page_item > a::before, .main-navigation .menu .dropdown-menu .menu-item > a::before {
+        content: none;
+    }
+}
+
+#primary-menu li.active > a{
+  color: var(--primary--color);
+}
+
+/*footer*/
+.footer:before {
+    background-image: unset;
+    background-color: var(--bg--color);
+}
+
+.footer-one .widget_block a:hover{
+  color: var(--primary--color);
+}
+
+.footer-one .widget_block ul.wp-block-list{
+  padding-left: 16px;
+}
+
+.footer-one .widget_block ul.wp-block-list li{
+  margin-bottom: 5px;
+}
+
+.footer-one .widget_block li{
+  list-style: square;
+}
+
+/*scroll*/
+.fa-arrow-up:before {
+  content: "\f077";
+}
+
+#c-scroll{
+  background-color: var(--primary--color);
+  border-radius: 50%;
+}
+
+#c-scroll:hover {
+  background-color: var(--bg--color);
+}
+
+/*sidebar*/
+.widget-area .widget_block h2{
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 1.2px;
+  padding-left: 35px;
+  padding-right: 35px;
+  position: relative;
+}
+
+.widget-area .widget_block h2:before,
+.widget-area .widget_block h2:after{
+  background-color: var(--bg--color);
+  content: "";
+  position: absolute;
+  top: 34%;
+  width: 25px;
+  height: 2px;
+}
+
+.widget-area .widget_block h2:before{
+  left: 0;
+}
+
+.widget-area .widget_block .wp-block-group__inner-container h2:after{
+  left: unset;
+}
+
+.widget-area .widget_block h2:after{
+  right: 0;
+}
+
+.widget-area .widget_block h2{
+  margin-bottom: 0;
+}
+
+/*blog page*/
+.read-more a{
+  border: none;
+  margin: 0;
+}
+
+.read-more a:hover:before {
+    bottom: -50px;
+    left: -20px;
+}
+
+.blog-item .date{
+  background-color: var(--bg--color);
+  right: unset;
+  left: 10px;
+}
+
+.blog-item .date p{
+  color: #fff; 
+}
+
+/*single page*/
+.blog-detail .post-meta{
+  text-align: center !important;
+  border: 1px solid #d7d7d7;
+}
+
+.woocommerce #respond input#submit:hover{
+  background: var(--bg--color) !important;
+}
